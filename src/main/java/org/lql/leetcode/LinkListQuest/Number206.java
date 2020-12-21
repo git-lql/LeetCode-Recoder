@@ -22,30 +22,15 @@ public class Number206 {
      * 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
      */
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        ListNode head1 = new ListNode(2);
-        ListNode head2 = new ListNode(3);
-        ListNode head3 = new ListNode(4);
-        ListNode head4 = new ListNode(5);
-        head.next = head1;
-        head1.next = head2;
-        head2.next = head3;
-        head3.next = head4;
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
         logger.debug("originHead:  " + head.val + " -> " + head.next.val + " -> " + head.next.next.val + " -> " + head.next.next.next.val + " -> " + head.next.next.next.next.val);
+
         ListNode listNode = iterationReverseList(head);
         logger.debug("iterationReverseList: " + listNode.val + " -> " + listNode.next.val + " -> " + listNode.next.next.val + " -> " + listNode.next.next.next.val + " -> " + listNode.next.next.next.next.val);
 
-        ListNode head5 = new ListNode(1);
-        ListNode head6 = new ListNode(2);
-        ListNode head7 = new ListNode(3);
-        ListNode head8 = new ListNode(4);
-        ListNode head9 = new ListNode(5);
-        head5.next = head6;
-        head6.next = head7;
-        head7.next = head8;
-        head8.next = head9;
+        ListNode head5 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
+
         ListNode listNode1 = recursionReverseLists(head5);
-        logger.debug(listNode1.val);
         logger.debug("recursionReverseLists: " + listNode1.val + " -> " + listNode1.next.val + " -> " + listNode1.next.next.val + " -> " + listNode1.next.next.next.val + " -> " + listNode1.next.next.next.next.val);
     }
 
@@ -55,6 +40,11 @@ public class Number206 {
 
         ListNode(int x) {
             val = x;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
         }
     }
 

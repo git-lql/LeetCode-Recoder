@@ -26,7 +26,7 @@ public class Number24 {
         logger.debug("recursionReverseLists: " + listNode1.val + " -> " + listNode1.next.val + " -> " + listNode1.next.next.val + " -> " + listNode1.next.next.next.val + " -> " + listNode1.next.next.next.next.val);
     }
 
-    public static class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
