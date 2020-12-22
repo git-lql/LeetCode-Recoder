@@ -7,9 +7,9 @@ import java.util.Arrays;
 /**
  * @author: lql
  * @date: 2020/12/20 21:17
- * @description: 移动零
+ * @description: 移动零-283
  */
-public class Number283 {
+public class MoveZeroes {
     private static Logger logger = Logger.getLogger("moveZero");
 
     /**

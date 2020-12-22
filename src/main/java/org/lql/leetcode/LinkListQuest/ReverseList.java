@@ -5,9 +5,9 @@ import org.apache.log4j.Logger;
 /**
  * @author: lql
  * @date: 2020/12/20 22:16
- * @description: 反转链表
+ * @description: 反转链表-206
  */
-public class Number206 {
+public class ReverseList {
 
     private static Logger logger = Logger.getLogger("reverseList");
 

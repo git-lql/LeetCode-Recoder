@@ -9,9 +9,9 @@ import java.util.List;
 /**
  * @author: lql
  * @date: 2020/12/20 21:56
- * @description: 三数之和
+ * @description: 三数之和-15
  */
-public class Number15 {
+public class ThreeSum {
 
     private static Logger logger = Logger.getLogger("threeSum");
 

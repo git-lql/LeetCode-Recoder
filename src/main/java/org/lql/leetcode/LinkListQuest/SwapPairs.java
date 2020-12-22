@@ -5,9 +5,9 @@ import org.apache.log4j.Logger;
 /**
  * @author: lql
  * @date: 2020/12/20 22:37
- * @description: 两两交换链表中结点
+ * @description: 两两交换链表中结点-24
  */
-public class Number24 {
+public class SwapPairs {
     private static Logger logger = Logger.getLogger("SwapPairs");
 
     /**

@@ -5,9 +5,9 @@ import org.apache.log4j.Logger;
 /**
  * @author: lql
  * @date: 2020/12/20 21:42
- * @description: 爬楼梯
+ * @description: 爬楼梯-70
  */
-public class Number70 {
+public class ClimbStairs {
 
     private static Logger logger = Logger.getLogger("climbStairs");
 

@@ -8,9 +8,9 @@ import java.util.HashMap;
 /**
  * @author: lql
  * @date: 2020/12/20 20:42
- * @description: 两数之和
+ * @description: 两数之和-1
  */
-public class Number1 {
+public class TwoSum {
 
     private static Logger logger = Logger.getLogger("Number1");
 
@@ -29,7 +29,7 @@ public class Number1 {
         int[] nums = new int[]{2, 7, 11, 15};
         int target = 9;
         int[] ret = violenceTwoSum(nums, target);
-        logger.debug("暴力枚举： " + Arrays.toString(ret));
+        logger.debug("Violence： " + Arrays.toString(ret));
         ret = hashTwoSum(nums, target);
         logger.debug("Hash: " + Arrays.toString(ret));
     }

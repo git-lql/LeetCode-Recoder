@@ -5,9 +5,9 @@ import org.apache.log4j.Logger;
 /**
  * @author: lql
  * @date: 2020/12/20 21:03
- * @description: 盛最多水的容器
+ * @description: 盛最多水的容器-11
  */
-public class Number11 {
+public class MaxArea {
 
     private static Logger logger = Logger.getLogger("盛最多水的容器");
 
