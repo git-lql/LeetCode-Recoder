@@ -2,9 +2,7 @@ package org.lql.leetcode.partone;
 
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author: lql
@@ -34,6 +32,40 @@ public class ThreeSum {
         int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
         List<List<Integer>> lists = threeSum(nums);
         logger.debug("threeSum: " + lists);
+    }
+
+    /**
+     * 暴力枚举
+     *
+     * @param nums 给定数组
+     * @return 和为零的元素下标集合
+     */
+    public static List<List<Integer>> violenceThreeSum(int[] nums) {
+        //元素排序
+        Arrays.sort(nums);
+        int n = nums.length;
+        Set<List<Integer>> res = new HashSet<>();
+        // a s d f g h j k p o
+        // i l               r
+        for (int i = 0; i < n; i++) {
+            int l = i + 1;
+            int r = n - 1;
+            while (l < r) {
+                int result = nums[i] + nums[l] + nums[r];
+                if (result == 0) {
+                    res.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                    l++;
+                    r--;
+                } else if (result < 0) {
+                    l++;
+                } else {
+                    r--;
+                }
+            }
+        }
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.addAll(res);
+        return ans;
     }
 
     /**
