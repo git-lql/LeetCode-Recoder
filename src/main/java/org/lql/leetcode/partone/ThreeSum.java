@@ -30,6 +30,8 @@ public class ThreeSum {
      */
     public static void main(String[] args) {
         int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
+        List<List<Integer>> lists1 = violenceThreeSum(nums);
+        logger.debug("violenceThreeSum: " + lists1);
         List<List<Integer>> lists = threeSum(nums);
         logger.debug("threeSum: " + lists);
     }
