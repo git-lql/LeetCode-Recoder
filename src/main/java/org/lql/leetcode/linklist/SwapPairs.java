@@ -1,4 +1,4 @@
-package org.lql.leetcode.LinkListQuest;
+package org.lql.leetcode.linklist;
 
 import org.apache.log4j.Logger;
 
