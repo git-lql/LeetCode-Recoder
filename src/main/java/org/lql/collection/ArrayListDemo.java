@@ -1,4 +1,4 @@
-package org.lql.leetcode.collectionframe;
+package org.lql.collection;
 
 import org.apache.log4j.Logger;
 
